@@ -1,9 +1,12 @@
 import random
 
-a= random.randint (10,106)
+a= random.randint (1,100)
 
 print(f"generated random number is {a}")
 
 randomfloat = random.random()
 
-print(f"Generated random float number is {randomfloat}")
+randomfloat = randomfloat *100
+
+print(f"Generated random float number is {round(randomfloat,2)}")
+

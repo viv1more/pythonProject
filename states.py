@@ -20,4 +20,11 @@ memes =["Moye Moye","Melodi"]
 print(memes)
 memes.extend(["Bhupendra Jogi","Elvish Bhai"])
 
+memes.append("Jamal Jamaloo")
+memes.insert (3, "Aayein ? ")
+
+memes.insert(len(memes), "7 Thala For a reason ")
+
+memes.pop(3)
+memes.remove("Jamal Jamaloo")
 print(memes)

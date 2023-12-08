@@ -14,4 +14,10 @@ states = [
     "38.Ladakh", "39.Lakshadweep", "40.NCT of Delhi"
 ]
 
-print(states[39])
+print(states)
+
+memes =["Moye Moye","Melodi"]
+print(memes)
+memes.extend(["Bhupendra Jogi","Elvish Bhai"])
+
+print(memes)

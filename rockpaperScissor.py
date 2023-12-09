@@ -35,7 +35,7 @@ elif choice == 1:
 elif choice == 2:
     print(f"You Choose Scissors{Scissors}")
 else:
-    print("Naughty ho rha hai kya bkl .. ")
+    print("Naughty ho rha hai kya bkl 😠😠😠😠😠.. ")
 
 # Now Computer's Turn
 
@@ -44,7 +44,7 @@ computerchoice = [Rock, Paper, Scissors]
 listlength = len(computerchoice)
 
 randomchoicePC = random.randint(0, listlength - 1)
-if choice <= 2:   #Because user can give value more than 2 still computer choose
+if choice <= 2:  # Because user can give value more than 2 still computer choose
     if randomchoicePC == 0:
         print(f"Computer Choose Rock {Rock}")
     elif randomchoicePC == 1:
@@ -55,15 +55,20 @@ if choice <= 2:   #Because user can give value more than 2 still computer choose
 # Checking if there is possibility of Draw
 
 if choice == randomchoicePC:
-    print("There is a Draw.....🤏🤏🤏🤏")
-
+    print(" ---------------------------------")
+    print("| There is a Draw........🤏🤏🤏   |")
+    print(" ---------------------------------")
 # Now the real game starts
 
 if (choice == 0 and randomchoicePC == 1) or (choice == 1 and randomchoicePC == 2) or (
         choice == 2 and randomchoicePC == 0):
-    print("Ohh No 😒😒😒!!! Computer Wins")
+    print(" _________________________________")
+    print("| Ohh No 😒😒😒!!! Computer Wins |")
+    print(" ---------------------------------")
 if (choice == 0 and randomchoicePC == 2) or (choice == 1 and randomchoicePC == 0) or (
         choice == 2 and randomchoicePC == 1):
-    print("Congratulations👌👌🍾🍾🎉 !!! You Win")
+    print(" ________________________________________")
+    print("| Congratulations👌👌🍾🍾🎉 !!! You Win |")
+    print(" ----------------------------------------")
 
 # made by itsvivekmore

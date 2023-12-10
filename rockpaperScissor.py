@@ -65,6 +65,7 @@ if (choice == 0 and randomchoicePC == 1) or (choice == 1 and randomchoicePC == 2
     print(" _________________________________")
     print("| Ohh No 😒😒😒!!! Computer Wins |")
     print(" ---------------------------------")
+
 if (choice == 0 and randomchoicePC == 2) or (choice == 1 and randomchoicePC == 0) or (
         choice == 2 and randomchoicePC == 1):
     print(" ________________________________________")

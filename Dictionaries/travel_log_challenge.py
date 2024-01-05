@@ -9,16 +9,14 @@ travel_log = [
     }
 ]
 
-def add_new_country(country= "Country", city ="City", visits = "visits"):
-    a=', '.join(city)
 
-    print(f"You have Visited {a}")
+def add_new_country(country="Country", city="City", visits="visits"):
+    result = ', '.join(city[:-1]) + ' and ' + city[-1]
     print(f"You have Visited {country} {visits} Times")
+    print(f"and the Cities You Visited are  {result}")
 
 
+add_new_country("France", ["Marseilles ", "Nantes", "Biarritz", "Carcassonne"], 5)
 
-
-
-add_new_country("France", ["Marseilles ", "Nantes", "Biarritz",  "Carcassonne"],5)
-
-# print(travel_log)
+add_new_country("India",["Jalgaon", "Nashik", "Pune", "Sambhajinagar", "Mumbai"], 15)
+# print(travel_log[1])

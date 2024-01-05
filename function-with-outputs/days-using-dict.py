@@ -17,7 +17,7 @@ def days_in_month(year, month):
                   {"September": 30}, {"October": 31}, {"November": 30}, {"December": 31}]
 
     if is_leap_year(year) and month == 2:
-        return {"February" :29}
+        return {"February": 29}
     return month_days[month - 1]
 
 

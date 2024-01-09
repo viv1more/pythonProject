@@ -30,9 +30,9 @@ def calculator():
     print(calclogo)
     num1 = float(input("Enter the First Number: "))
 
-    for symbol in operations:
-        print(symbol)
-    should_continue = True
+    for _ in operations:
+
+        should_continue = True
 
     while should_continue:
         operation_symbol = input('Choose the operation from the above ')

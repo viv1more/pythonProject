@@ -1,5 +1,5 @@
 import random as rd
-from art import higherlower, vs
+from art import higher_lower_logo, vs
 from gamedata import data
 
 
@@ -33,7 +33,7 @@ def check_answer(guess, a_followers, b_followers):
 
 
 def game():
-    print(higherlower)  # Add art.
+    print(higher_lower_logo)  # Add art.
     score = 0
     game_should_continue = True
     account_a = rand_acc()
@@ -48,7 +48,7 @@ def game():
         while account_a == account_b:
             account_b = rand_acc()  # Make B become the next A.
 
-            print(f"Compare {data_format(account_a)} {vs} {data_format(account_b)}")
+            print(f"Compare {data_format(account_a)}{vs}{data_format(account_b)}")
             # Ask user for a guess.
             guess = input("Who has More Followers ? Type 'A' or 'B'").lower()
             ## Get follower count.
@@ -57,7 +57,7 @@ def game():
 
             is_correct = check_answer(guess, a_follower_count, b_follower_count)
 
-            print(higherlower)
+            print(higher_lower_logo)
 
             # Score Keeping.
             if is_correct:
@@ -69,13 +69,7 @@ def game():
             else:
                 game_should_continue = False
 
-                print(f"Sorry ! Thats Wrong , Your Final Score is {score}") # Feedback.
+                print(f"Sorry ! Thats Wrong , Your Final Score is {score}")  # Feedback.
 
 
 game()
-
-
-
-
-
-
